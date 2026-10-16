@@ -153,7 +153,7 @@ services:
     restart: unless-stopped
 
   ntfy:
-    image: docker.io/binwiederhier/ntfy
+    image: binwiederhier/ntfy
     command: serve
     ports:
       - "${NTFY_BIND:-127.0.0.1}:8091:80"
